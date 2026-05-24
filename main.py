@@ -11,6 +11,7 @@ def read_input_file(file_path):
     with open(file_path, "r", encoding='utf-8') as file:
         return file.read()
     
+    
 #Function to remove repeated values & keep original order
 def remove_repetitions(items):
     clean_list = []
@@ -38,3 +39,18 @@ output_file = os.path.join("output", "output.json")
 
 #read raw text
 raw_txt = read_input_file(input_file)
+
+
+#regex patterns (5)
+email_pattern = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b"
+url_pattern = r"\b(?:https?://|www\.)[A-Za-z0-9.-]+\.[A-Za-z]{2,}(?:/[^\s]*)?"
+phone_pattern = r"\b(?:\+?\d{1,3}[-.\s]?)?(?:\d{3,4}[-.\s]?){2,3}\d{0,4}\b"
+card_pattern = r"\b(?:\d[ -]*?){13,16}\b"
+currency_pattern = r"\b(?:USD|RWF|\$)\s?\d{1,3}(?:,\d{3})*(?:\.\d{2})?\b"
+
+#extract data using regex
+emails = re.findall(email_pattern, raw_text)
+urls = re.findall(url_pattern, raw_text)
+phone_numbers = re.findall(phone_pattern, raw_text)
+credit_cards = re.findall(card_pattern, raw_text)
+currency_amounts = re.findall(currency_pattern, raw_text)
