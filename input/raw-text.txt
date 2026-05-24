@@ -1,0 +1,151 @@
+ALU Digital Services - Raw API Export Log
+Exported On: 24 May 2026
+Source: Student Support Portal, Alumni Portal, SI Booking System, Payment Desk
+
+----------------------------------------------------------------------
+Ticket ID: ALU-SUP-2041
+----------------------------------------------------------------------
+
+A new student support request was submitted from the admissions page.
+Student name: Kevin Mutoni
+Primary email: kevin.mutoni@gmail.com
+School email: kevin.mutoni@alueducation.com
+Phone number: +250 788 456 120
+
+The student said he had already checked the admissions page:
+https://www.alueducation.com/admissions
+
+Preferred call time: 09:30 AM
+Message:
+"Hello, I completed my application but I have not received confirmation yet.
+Please contact me before 17:00 if possible."
+
+Internal tag added by support team: #AdmissionsSupport
+Amount paid for application processing: $25.00
+
+
+----------------------------------------------------------------------
+Ticket ID: ALU-ALUMNI-2042
+----------------------------------------------------------------------
+
+Alumni profile update request received.
+
+Alumni email: grace.uwase@alumni.alueducation.com
+Backup email: graceuwase@yahoo.com
+Phone: 0788 333 221
+
+Profile page submitted by user:
+www.alueducation.com/alumni/profile-update
+
+The user mentioned that her profile card still shows:
+<div class="old-profile">Graduated Student</div>
+
+Meeting time requested: 2:15 PM
+Department note: Add this request under #AlumniRecords and #ProfileUpdate.
+
+Estimated certificate reprint fee: RWF 15,000
+
+
+----------------------------------------------------------------------
+Ticket ID: ALU-SI-2043
+----------------------------------------------------------------------
+
+An SI session update was submitted through the learning support system.
+
+SI email: mentor.team@si.alueducation.com
+Student contact email: student.helper@alueducation.com
+Resource URL: https://learning.alueducation.com/resources/week-4?module=regex
+
+Session times:
+Morning session: 08:00
+Evening revision: 18:30
+
+System note:
+<section id="session-card">Regex onboarding session</section>
+
+Hashtags found in message:
+#RegexPractice #StudentSupport #Week4
+
+Expected refreshment budget: $120.50
+
+
+----------------------------------------------------------------------
+Ticket ID: PAY-7781
+----------------------------------------------------------------------
+
+Payment support form received from martin.okello@hotmail.com.
+
+The student reported that the payment form failed after submitting card details.
+Card number entered: 4111 1111 1111 1111
+Second attempt card format: 5500-0000-0000-0004
+Support phone number: +1-202-555-0198
+
+Payment page:
+http://payments.example.org/support/ticket/7781
+
+Amount mentioned in message:
+USD 250.00
+
+The message also contained this HTML from the payment page:
+<button type="submit">Pay Now</button>
+
+
+----------------------------------------------------------------------
+Ticket ID: PARTNER-9091
+----------------------------------------------------------------------
+
+Partner organization contact details were imported from an external CRM.
+
+Organization email: partnerships@company.org
+Website: https://partners.example.org/contact-us
+Office phone: +44 20 7946 0958
+
+The partner asked to be contacted at 14:45 during working hours.
+Campaign hashtags included: #GlobalPartners #ALUCommunity
+
+Invoice estimate:
+$1,450.75
+
+
+----------------------------------------------------------------------
+Invalid, malformed, and suspicious records found during import
+----------------------------------------------------------------------
+
+bad-email@
+student@alueducation
+hello@@gmail.com
+fake.user@fake-alueducation.com
+admin@alueducation.com' OR '1'='1
+
+Invalid URLs:
+https://bad site.com/login
+www.fake-url
+http:/broken-link.com
+
+Invalid phone numbers:
+12345
++250 phone number
+0788-abc-221
+
+Invalid card numbers:
+4111-2222
+1234 5678 999
+0000 0000 0000
+
+Suspicious HTML and script-like content:
+<script>alert("student hacked")</script>
+<img src=x onerror=alert("bad")>
+DROP TABLE users;
+SELECT * FROM students WHERE email = 'admin@alueducation.com';
+
+Suspicious hashtags:
+#bad-tag!
+##doublehash
+#123
+
+Suspicious currency values:
+$abc
+USD twenty
+RWF -5000
+
+End of raw export.
