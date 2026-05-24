@@ -49,8 +49,21 @@ card_pattern = r"\b(?:\d[ -]*?){13,16}\b"
 currency_pattern = r"\b(?:USD|RWF|\$)\s?\d{1,3}(?:,\d{3})*(?:\.\d{2})?\b"
 
 #extract data using regex
-emails = re.findall(email_pattern, raw_text)
-urls = re.findall(url_pattern, raw_text)
-phone_numbers = re.findall(phone_pattern, raw_text)
-credit_cards = re.findall(card_pattern, raw_text)
-currency_amounts = re.findall(currency_pattern, raw_text)
+emails = re.findall(email_pattern, raw_txt)
+urls = re.findall(url_pattern, raw_txt)
+phone_numbers = re.findall(phone_pattern, raw_txt)
+credit_cards = re.findall(card_pattern, raw_txt)
+currency_amounts = re.findall(currency_pattern, raw_txt)
+
+#alu email validation
+alu_official_emails = []
+alu_alumni_emails = []
+alu_si_emails = []
+
+for email in emails:
+    if email.endswith("@alueducation.com"):
+        alu_official_emails.append(email)
+    elif email.endswith("@alumni.alueducation.com"):
+        alu_alumni_emails.append(email)
+    elif email.endswith("@si.alueducation.com"):
+        alu_si_emails.append(email)
