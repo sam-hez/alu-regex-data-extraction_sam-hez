@@ -66,4 +66,4 @@ for email in emails:
     elif email.endswith("@alumni.alueducation.com"):
         alu_alumni_emails.append(email)
     elif email.endswith("@si.alueducation.com"):
-        alu_si_emails.append(email)
+        alu_si_emails.append(email) 
