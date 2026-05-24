@@ -67,3 +67,36 @@ for email in emails:
         alu_alumni_emails.append(email)
     elif email.endswith("@si.alueducation.com"):
         alu_si_emails.append(email) 
+
+
+# Mask credit card numbers before saving
+masked_credit_cards = []
+
+for card in credit_cards:
+    masked_card = hide_card_number(card)
+
+    if masked_card is not None:
+        masked_credit_cards.append(masked_card)
+
+
+# Store all results in a dictionary
+results = {
+    "emails": remove_repetitions(emails),
+    "alu_official_emails": remove_repetitions(alu_official_emails),
+    "alu_alumni_emails": remove_repetitions(alu_alumni_emails),
+    "alu_si_emails": remove_repetitions(alu_si_emails),
+    "urls": remove_repetitions(urls),
+    "phone_numbers": remove_repetitions(phone_numbers),
+    "credit_cards_masked": remove_repetitions(masked_credit_cards),
+    "currency_amounts": remove_repetitions(currency_amounts),
+    "security_note": "Credit card numbers are hidden before output. invalid and suspicious text is ignored unless it matches safe regex rules"
+}
+
+#save json results
+with open(output_file, "w", encoding="utf-8") as file:
+    json.dump(results, file, indent=4)
+
+
+#print a simple success message
+print("+++ EXTRACTION SUCCESSFULLY COMPLETE ++++")
+print("Results saved to output/output.json")
