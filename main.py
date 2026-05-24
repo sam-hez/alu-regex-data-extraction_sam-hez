@@ -87,7 +87,7 @@ results = {
     "alu_si_emails": remove_repetitions(alu_si_emails),
     "urls": remove_repetitions(urls),
     "phone_numbers": remove_repetitions(phone_numbers),
-    "credit_cards_masked": remove_repetitions(masked_credit_cards),
+    "credit_cards_hidden": remove_repetitions(masked_credit_cards),
     "currency_amounts": remove_repetitions(currency_amounts),
     "security_note": "Credit card numbers are hidden before output. invalid and suspicious text is ignored unless it matches safe regex rules"
 }

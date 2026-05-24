@@ -1,0 +1,51 @@
+{
+    "emails": [
+        "kevin.mutoni@gmail.com",
+        "kevin.mutoni@alueducation.com",
+        "grace.uwase@alumni.alueducation.com",
+        "graceuwase@yahoo.com",
+        "mentor.team@si.alueducation.com",
+        "student.helper@alueducation.com",
+        "martin.okello@hotmail.com",
+        "partnerships@company.org",
+        "fake.user@fake-alueducation.com",
+        "admin@alueducation.com"
+    ],
+    "alu_official_emails": [
+        "kevin.mutoni@alueducation.com",
+        "student.helper@alueducation.com",
+        "admin@alueducation.com"
+    ],
+    "alu_alumni_emails": [
+        "grace.uwase@alumni.alueducation.com"
+    ],
+    "alu_si_emails": [
+        "mentor.team@si.alueducation.com"
+    ],
+    "urls": [
+        "https://www.alueducation.com/admissions",
+        "www.alueducation.com/alumni/profile-update",
+        "https://learning.alueducation.com/resources/week-4?module=regex",
+        "http://payments.example.org/support/ticket/7781",
+        "https://partners.example.org/contact-us"
+    ],
+    "phone_numbers": [
+        "250 788 456 120",
+        "0788 333 221",
+        "4111 1111 1111 1111",
+        "5500-0000-0000-0004",
+        "1-202-555-0198",
+        "20 7946 0958",
+        "4111-2222\n1234 5678",
+        "999\n0000 0000 0000"
+    ],
+    "credit_cards_masked": [
+        "++++ ++++ ++++ 1111",
+        "++++ ++++ ++++ 0004"
+    ],
+    "currency_amounts": [
+        "RWF 15,000",
+        "USD 250.00"
+    ],
+    "security_note": "Credit card numbers are hidden before output. invalid and suspicious text is ignored unless it matches safe regex rules"
+}
