@@ -12,7 +12,7 @@ Even though the input file contains other text like times, HTML tags, and hashta
 ## Folder Structure
 
 ```text
-alu-regex-data-extraction_username/
+alu-regex-data-extraction_sam-hez/
 ├── input/
 │   └── raw-text.txt
 ├── output/
